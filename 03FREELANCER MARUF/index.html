@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello! I am freelancer Maruf a Professional front end developer. This is my portfolio site you can visit now my site.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <!-- FAVICON ICON SET LINK -->
+    <link rel="shortcut icon" href="resources/image/pic1.png" type="image/x-icon">
+    <!-- GOOGLE FONT CSS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME CDN CSS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- VENDORS CSS LINK USING FOR GRITD OR NORMALIZE -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <!-- VENDORS CSS LINK FOR ANIMATED PROGRES BAR -->
+    <link rel="stylesheet" href="vendors/css/animated-counter-prograssbar.css">
+    <!-- lightbox popup slider css code link starting using popup image slider -->
+    <link rel="stylesheet" href="vendors/css/lightbox.min.css">
+    <!-- RESOURCES CSS LINK -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- RESOURCES CSS LINK -->
+    <link rel="stylesheet" href="resources/css/responsive.css">
+
+</head>
+
+<body onload="myLoading()">
+
+    <!-- LODING DIV START -->
+    <div id="loading"></div>
+    <!-- LODING DIV END -->
+
+    <!-- HEADER START -->
+    <header id="header">
+        <div class="top_header">
+            <div class="row">
+                <div class="top_header_af_before">
+                    <div class="header_left">
+                        <span><i class="fas fa-phone-square-alt"></i> +88 01882-952917</span>
+                        <span><i class="fas fa-envelope"></i> mobarokhossenmaruf917@gmail.com </span>
+                    </div>
+                    <div class="header_right">
+                        <div class="header_social_icons">
+                            <a href="https://www.facebook.com/profile.php?id=100041984773396" target="_blank"
+                                title="facebook-f"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://en.wikipedia.org/wiki/Google%2B" target="_blank" title="google-plus-g"><i
+                                    class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/home?lang=en" target="_blank" title="twitter"><i
+                                    class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/mdmobarokhossen17/" target="_blank"
+                                title="linkedin-in"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="search-form-toggle"><i class="fas fa-search" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="row">
+                <div class="logo">
+                    <a href="http://freelancermaruf.rf.gd"><img src="resources/image/logo.jpg" alt="logo" /></a>
+                </div>
+                <div class="main_manu">
+                    <ul class="main_manu_ul" data-spy="affix" data-offset-top="197">
+                        <li class="main_manu_li"><a href="#header" class="active">home</a></li>
+                        <li class="main_manu_li"><a href="#aboutus">about us</a></li>
+                        <li class="main_manu_li"><a href="#services">Services</a></li>
+                        <li class="main_manu_li"><a href="#gallery">Gallery</a></li>
+                        <li class="main_manu_li"><a href="#skills">Skills</a></li>
+                        <li class="main_manu_li"><a href="#contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="overlay_nav">
+                    <ul onclick="mainManuLi()"  class="overlay_nav_main_manu_ul" data-spy="affix" data-offset-top="197">
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#header" class="active">home</a></li>
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#aboutus">about us</a></li>
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#services">Services</a></li>
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#gallery">Gallery</a></li>
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#skills">Skills</a></li>
+                        <li onclick="mainManuLi()"  class="overlay_nav_main_manu_li"><a href="#contactus">Contact Us</a></li>
+                    </ul>
+                    <div class="closeBtn"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="iconManu"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SLIDER SECTION START -->
+    <section id="slider_section">
+        <div class="slider_full_control">
+            <div class="mySlides fade">
+                <img src="resources/image/sliderimg1.jpg" alt="sliderimg1">
+                <div class="text">
+                    <div class="row">
+                        <div class="nivo-caption">
+                            <h4 class="border_stylis">Assalamu Alaikum</h4>
+
+                            <a href="#">
+                                <h1>Welcome to my website</h1>
+                            </a>
+                            <div class="separator">
+                                <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                            </div>
+                            <div class="clear"></div>
+
+                            <p> Thanks to everyone on behalf of freelancer Maruf for coming to my
+                                website. I hope you find out all about me.</p>
+
+                            <a href="http://freelancermaruf.rf.gd/aboutus.html" class="sliderbtn">
+                                Learn More </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="resources/image/mypic2.jpg" alt="mypic2">
+                <div class="text">
+                    <div class="row">
+                        <div class="nivo-caption">
+                            <h4 class="border_stylis">Hello Friends</h4>
+
+                            <a href="#">
+                                <h1>Let's all be friends</h1>
+                            </a>
+                            <div class="separator">
+                                <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                            </div>
+                            <div class="clear"></div>
+
+                            <p>Identity of the clan in use. If you find anything wrong with me, you must try to
+                                share it
+                                with me. Why can't everyone be wrong? I will try my best to correct my mistake.
+                                And if all else fails, get ideas from others. Thanks for reading.</p>
+
+                            <a href="http://freelancermaruf.rf.gd/aboutus.html" class="sliderbtn">
+                                Learn More </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sliderBtn">
+                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SLIDER SECTION END -->
+
+    <!-- OUR GOALS SECTION START -->
+    <section class="our_goals" id="aboutus">
+        <div class="our_goals_full_control">
+            <div class="row">
+                <div class="contentText">
+                    <div class="section_head">
+                        <h4 class="section_title_small">My Goals</h4>
+                        <h2 class="section_title">Freelancing</h2>
+                        <div class="separator">
+                            <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                        </div>
+                        <p class="section_text">I want to be a freelancer and stand on my own two feet. And I will run
+                            all
+                            the expenses of my family. I will fulfill all the expectations of my parents.</p>
+                    </div>
+                </div>
+
+                <div class="boxWrapper col span_1_of_2 box">
+                    <div class="singleBox">
+                        <h4><a href="#">Do you study?</a></h4>
+                        <p>Yes, I study. I am now in Inter Second Year. I'm reading an Business group. But I want to study ICT in the future. I always try to fulfill my dreams.</p>
+                        <p><a class="readmore" href="http://freelancermaruf.rf.gd/aboutus.html">Read More</a></p>
+                        <i class="fas fa-flask" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="boxWrapper col span_1_of_2 box" id="lastone">
+                    <div class="singleBox">
+                        <h4><a href="#">Why learn freelancing</a></h4>
+                        <p>
+                            Because! I wish I could work as a freelancer. I want to take up freelancing as my profession. Being a freelancer is my dream for many days.</p>
+                        <p><a class="readmore" href="http://freelancermaruf.rf.gd/aboutus.html">Read More</a></p>
+                        <i class="fas fa-chart-area" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="boxWrapper col span_1_of_2 box">
+                    <div class="singleBox">
+                        <h4><a href="#">How much time do you give</a></h4>
+                        <p>
+                            I devote my entire leisure time to my work. I spend my free time behind my work and even want to make my client happy.</p>
+                        <p><a class="readmore" href="http://freelancermaruf.rf.gd/aboutus.html">Read More</a></p>
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="boxWrapper col span_1_of_2 box" id="lasttow">
+                    <div class="singleBox">
+                        <h4><a href="#">What do you love to do</a></h4>
+                        <p>I love working with webdesign. I want to be a professional full steck web developer. I love working with the web.</p>
+                        <p><a class="readmore" href="http://freelancermaruf.rf.gd/aboutus.html">Read More</a></p>
+                        <i class="fas fa-flask" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR GOALS SECTION END -->
+
+    <!-- CAROUSEL SLIDER SECTION START -->
+    <section class="sec-overlay" id="services"
+        style="background-image: url(resources/image/mypic3.jpg); background-color: rgb(199 187 189); background-blend-mode: overlay; background-repeat: no-repeat; background-position: center top; background-attachment: fixed; background-size: cover;">
+        <div class="row">
+            <div class="contentText">
+                <div class="section_head">
+                    <h4 class="section_title_small">My Work/Services</h4>
+                    <h2 class="section_title">WHAT AM I DOING</h2>
+                    <div class="separator">
+                        <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel slider starting -->
+        <div class="row socend">
+            <div class="col span_1_of_3 box item">
+                <div class="box boxone">
+                    <div class="detail-box">
+                        <i class="fas fa-laptop" aria-hidden="true"></i>
+                        <h3 class="box-title">WEB DESIGN</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">We provide Professional and affordable websites from a team you can
+                                trust</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_3 box item">
+                <div class="box boxtow">
+                    <div class="detail-box">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                        <h3 class="box-title">WEB DEVELOPMENT</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">We are dedicated to providing best services. Our goal is your
+                                satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_3 box item">
+                <div class="box boxthree">
+                    <div class="detail-box">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <h3 class="box-title">RESPONSIVE DESIGN</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">We provide responsive web design which attracts & engages your customers
+                                across all platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_3 box item">
+                <div class="box boxfour">
+                    <div class="detail-box">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                        <h3 class="box-title">GRAPHICS DESIGN</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">Our designers are experienced in creating the graphics that truly
+                                reflect our clients business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_3 box item">
+                <div class="box boxsix">
+                    <div class="detail-box">
+                        <i class="fab fa-wordpress" aria-hidden="true"></i>
+                        <h3 class="box-title"> WORDPRESS</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">I'm ready to do whatever kind of WordPress site you want.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col span_1_of_3 box item">
+                <div class="box boxfive">
+                    <div class="detail-box">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                        <h3 class="box-title">DATA ENTRY</h3>
+                        <div class="text-box-decs">
+                            <p class="box-decs">Data Entry We offer a complete range of services to cover all types of
+                                data entry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel slider ending -->
+    </section>
+    <!-- CAROUSEL SLIDER SECTION END -->
+
+    <!-- DONATE SECTION START -->
+    <section id="donate_section">
+        <div class="row">
+            <div class="contentText">
+                <div class="section_head">
+                    <h4 class="section_title_small">Entertainment</h4>
+                    <h2 class="section_title">providing entertainment</h2>
+                    <div class="separator">
+                        <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+                    <p class="section_text">I hope you like the video as well as entertaining and taking it yourself.
+                    </p>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box first_col">
+                <div class="donate-video" style="background-image:url(image/videobackimg.jpg);">
+
+                    <iframe width="570" height="366" src="https://www.youtube.com/embed/m1QdLw8VtAQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen ></iframe>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box last_col">
+                <h2 class="section_title">Enjoy <span class="highlight-text">freelancing</span> &amp; as well</h2>
+                <p>You don't have to have fun as well as work, you don't understand what reality is. And the mentality
+                    is not good. So it is better to understand the outside world without working all the time
+                    .</p>
+                <div class="clear"></div>
+                <div class="donate_box_wrapper">
+                    <div class="col span_1_of_3 donate-box">
+                        <div class="donate-thumb">
+                            <figure><img src="resources/image/info1.png" alt="infoone">
+                            </figure>
+                        </div>
+                        <div class="donate-title">
+                            <h5><a href="#">Enjoy life</a></h5>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_3 donate-box">
+                        <div class="donate-thumb">
+                            <figure><img src="resources/image/info2.png" alt="infotwo">
+                            </figure>
+                        </div>
+                        <div class="donate-title">
+                            <h5><a href="#">
+                                    Love people</a></h5>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_3 donate-box" id="lastthree">
+                        <div class="donate-thumb">
+                            <figure><img src="resources/image/info3.png" alt="infothree">
+                            </figure>
+                        </div>
+                        <div class="donate-title">
+                            <h5><a href="#">Be a Volunteer</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <!-- DONATE SECTION END -->
+
+    <!-- COUNTING SECTION START -->
+    <section
+        style="background-image:url(resources/image/counter-bg.jpg); background-repeat:no-repeat; background-position: center top; background-attachment:fixed; background-size:cover; "
+        class="sec-overlay" id="counting_section">
+        <div class="row">
+            <div class="full-container">
+                <div class="wow fadeInUp" data-wow-duration="1s"
+                    style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+
+                    <div class="col span_1_of_4 counter-box">
+                        <h6 class="counter-ttl" style="color:#ffffff">HAPPY CUSTOMER</h6>
+                        <h2 class="counter" style="color:#ffffff" data-target="0">0</h2>
+                    </div>
+                    <div class="col span_1_of_4 counter-box">
+                        <h6 class="counter-ttl" style="color:#ffffff">PROJECT COMPLETED</h6>
+                        <h2 class="counter" style="color:#ffffff" data-target="0">0</h2>
+                    </div>
+                    <div class="col span_1_of_4 counter-box">
+                        <h6 class="counter-ttl" style="color:#ffffff">Fiverr gig published</h6>
+                        <h2 class="counter" style="color:#ffffff" data-target="4">0</h2>
+                    </div>
+                    <div class="col span_1_of_4 counter-box">
+                        <h6 class="counter-ttl" style="color:#ffffff">Job Success</h6>
+                        <h2 class="counter" style="color:#ffffff" data-target="0">0</h2>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- COUNTING SECTION END -->
+
+    <!-- FUTURE PLAN SECTION START -->
+    <section id="future_plan_section">
+        <div class="row">
+            <div class="contentText">
+                <div class="section_head">
+                    <h4 class="section_title_small">Future Plan</h4>
+                    <h2 class="section_title">About my future plan</h2>
+                    <div class="separator">
+                        <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+                    <p class="section_text">Let me say something as my future plan. I wish I could help people learn
+                        freelancing.</p>
+                </div>
+            </div>
+            <div class="event-wrap">
+                <div class="col span_1_of_3 event-list grid-col-three future-plan-single box">
+                    <div class="event-thumbnail">
+                        <img src="resources/image/helpimg1.jpg" alt="helpimg1">
+                        <div class="event-info">
+                            <span class="event-date"><i class="far fa-calendar-alt"
+                                    aria-hidden="true"></i>Freelancermaruf</span>
+                            <span class="event-location"><i class="far fa-map-marker-alt"
+                                    aria-hidden="true"></i>Bangladesh</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h4>Teaching freelancing</h4>
+                        <p class="event-time">I will teach freelancing to everyone in the future. I will help everyone
+                            to build this career. I want everyone to build this career like me</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 event-list grid-col-three  future-plan-single box">
+                    <div class="event-thumbnail">
+                        <img src="resources/image/helpimg2.jpg" alt="helpimg2">
+                        <div class="event-info">
+                            <span class="event-date"><i class="far fa-calendar-alt"
+                                    aria-hidden="true"></i>Freelancermaruf</span>
+                            <span class="event-location"><i class="far fa-map-marker-alt"
+                                    aria-hidden="true"></i>Bangladesh</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h4>People's Helping</h4>
+                        <p class="event-time">I will try to help people as much as I can. So that people can do
+                            something good. So that they do not have problems for work.</p>
+                    </div>
+                </div>
+                <div class="col span_1_of_3 event-list grid-col-three  lastcols future-plan-single box">
+                    <div class="event-thumbnail">
+                        <img src="resources/image/helpimg3.jpg" alt="helpimg3">
+                        <div class="event-info">
+                            <span class="event-date"><i class="far fa-calendar-alt"
+                                    aria-hidden="true"></i>Freelancermaruf</span>
+                            <span class="event-location"><i class="far fa-map-marker-alt"
+                                    aria-hidden="true"></i>Bangladesh</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h4>Disability help</h4>
+                        <p class="event-time">I will try to teach freelancing to the disabled. So that they also get a
+                            chance to do something. Let's make their wishes come true</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <!-- FUTURE PLAN SECTION END -->
+
+    <!-- PHOTO CALLERY SECTION START -->
+    <section
+        style="background-image:url(resources/image/gallerybackgroung.jpg); background-repeat:no-repeat; background-position: center top; background-attachment:fixed; background-size:cover; "
+        class="sec-overlay callery_section" id="gallery">
+        <div class="row">
+            <div class="wow fadeInUp" data-wow-duration="1s">
+                <div class="contentText">
+                    <div class="section_head">
+                        <h2 class="section_title galleryh2">Photo Gallery</h2>
+                        <div class="separator">
+                            <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                        </div>
+                        <p class="section_text galleryp">The pictures below are my own pictures. I have been given to
+                            recognize.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-wrap">
+                    <div class="Gallery">
+
+                        <div class="col span_1_of_3 gallery grid-col-three ">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg1.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg1.jpg" alt="galleryimg1">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col span_1_of_3 gallery grid-col-three second-gallery-img">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg2.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg2.jpg" alt="galleryimg2">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_3 gallery grid-col-three lastsite">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg3.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg3.jpg" alt="galleryimg3">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i
+                                                class="fas fa-search"></i></div>
+                                    </div>
+                                </a>
+
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col span_1_of_3 gallery grid-col-three second-gallery-img">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg4.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg4.jpg" alt="galleryimg4">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_3 gallery grid-col-three ">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg5.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg5.jpg" alt="galleryimg5">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_3 gallery grid-col-three lastsite second-gallery-img">
+                            <div class="gallery-image galleryTub">
+                                <a class="lightboxImg" href="resources/image/galleryimg6.jpg"
+                                    data-lightbox="mygallery"><img src="resources/image/galleryimg6.jpg" alt="galleryimg6">
+                                    <div class="gallery-icon">
+                                        <div class="sep-gallery" data-fancybox="images"><i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="gallery-title">
+                                    <h5>This is my own picture</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- PHOTO GALLERY SECTION END -->
+
+    <!-- SKILS SECTION START -->
+    <section class="skills_section" id="skills">
+        <div class="row">
+            <div class="skills-alldiv">
+                <div class="contentText">
+                    <div class="section_head">
+                        <h4 class="section_title_small">Skills</h4>
+                        <h2 class="section_title">My Skills</h2>
+                        <div class="separator">
+                            <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="skills-content-column">
+                    <div class="col span_1_of_2 skills-column-left box">
+                        <h2 class="section_title">My creative skills & expriences</h2>
+                        <p>I am a front end developer. I have about 2+ years of experience.
+                            The skills I have acquired are
+                            HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, WORDPRESS etc. <span
+                                style="color: #61a734; font-weight: 600;"> I do convart PSD to HTML, XD to HMTL, Figma
+                                to HTML with fully responsive design , Parsonal Blog site create and front end
+                                developer. </span>
+                            I try my best to work with the experiences I have gained. I will to do best front end
+                            website
+                            design i have confidence.
+                        </p>
+                        <div class="skills-link-btn"><a href="#">Read More</a></div>
+                    </div>
+                    <div class="col span_1_of_2 skills-column-right box">
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">HTML</h4>
+                            <div progress-bar data-percentage="90%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">CSS</h4>
+                            <div progress-bar data-percentage="70%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">BOOTSTRAP</h4>
+                            <div progress-bar data-percentage="70%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">JAVASCRIPT</h4>
+                            <div progress-bar data-percentage="75%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">JQUERY</h4>
+                            <div progress-bar data-percentage="80%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progressbar-item">
+                            <h4 class="progress-title">WORDPRESS</h4>
+                            <div progress-bar data-percentage="50%">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILS SECTION END -->
+
+    <!-- CLIENT SECTION START -->
+    <section id="client_section">
+        <div class="row">
+            <div class="contentText">
+                <div class="section_head">
+                    <h4 class="section_title_small">Client</h4>
+                    <h2 class="section_title">OUR PARTNERS</h2>
+                    <div class="separator">
+                        <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo1.jpg" alt="logo1"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo2.jpg" alt="logo2"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo3.jpg" alt="logo3"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo4.jpg" alt="logo4"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo5.jpg" alt="logo5"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo6.jpg" alt="logo6"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo1.jpg" alt="logo1"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo2.jpg" alt="logo2"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo3.jpg" alt="logo3"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo4.jpg" alt="logo4"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo5.jpg" alt="logo5"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo6.jpg" alt="logo6"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo1.jpg" alt="logo1"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo2.jpg" alt="logo2"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo3.jpg" alt="logo3"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo4.jpg" alt="logo4"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo5.jpg" alt="logo5"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo6.jpg" alt="logo6"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#" target="_blank"><img src="resources/image/logo1.jpg" alt="logo1"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- CLIENT SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section class="contactBox" id="contactus">
+        <div class="row">
+            <div class="contentText">
+                <div class="section_head">
+                    <h4 class="section_title_small">Admin</h4>
+                    <h2 class="section_title">Contact Us</h2>
+                    <div class="separator">
+                        <div class="sep-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="contact-top">
+                <div class="col span_1_of_3 contact-box box">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div><!-- contact-icon -->
+                    <div class="contact-details">
+                        <h5>Address :</h5>
+                        <p>Chandanaish, Chittagong, Bangladesh</p>
+                    </div><!-- contact-details -->
+                    <div class="clear"></div>
+                </div><!-- contact-box -->
+
+                <div class="col span_1_of_3 contact-box box">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div><!-- contact-icon -->
+                    <div class="contact-details">
+                        <h5>Phone Number :</h5>
+                        <p><span>01882-952917</span><br><span>01862-040213</span></p>
+                    </div><!-- contact-details -->
+                    <div class="clear"></div>
+                </div><!-- contact-box -->
+
+                <div class="col span_1_of_3 contact-box last box">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div><!-- contact-icon -->
+                    <div class="contact-details">
+                        <h5>Email Id :</h5>
+                        <p><span>mobarokhossen917@gmail.com</span><br /><span>freelancermaruf17@gmail.com</span></p>
+                    </div><!-- contact-details -->
+                    <div class="clear"></div>
+                </div><!-- contact-box -->
+                <div class="clear"></div>
+            </div>
+            <div class="contact-content">
+                <h2 class="section_title">Want to talk? <span class="highlight-text">Let’s do it!</span></h2>
+                <p>Please call or email contact form and we will be happy to assist you.<br>
+                </p>
+                <div id="contactform_main">
+                    <div role="form" class="wpcf7" id="wpcf7-f165-p108-o1" lang="en-US" dir="ltr">
+                        <div class="screen-reader-response" aria-live="polite"></div>
+                        <form method="post" class="contact_form" novalidate="novalidate">
+                            <div class="col span_1_of_2 form_group">
+                                <input aria-required="true" type="text" placeholder="First Name" aria-invalid="false"
+                                    name="user_first_name" class="user_input formright">
+                            </div>
+                            <div class="col span_1_of_2 form_group">
+                                <input aria-required="true" type="text" placeholder="Last Name" aria-invalid="false"
+                                    name="user_last_name" class="user_input formright">
+                            </div>
+                            <div class="col span_1_of_2 form_group" style="margin-left:0;">
+                                <input aria-required="true" type="tel" value size="40" placeholder="Contact Number"
+                                    aria-invalid="false" value="Phone Number" name="user_phone_number"
+                                    class="user_input formright">
+                            </div>
+                            <div class="col span_1_of_2 form_group">
+                                <input type="email" placeholder="Your Email" name="user_email"
+                                    class="user_input formright">
+                            </div>
+                            <div class="form_group" style="margin-left:0; margin-bottom: 2rem;">
+                                <textarea aria-required="true" name="user_message"
+                                    class="user_input formright" rows="5" placeholder="Message"
+                                    aria-invalid="false"></textarea>
+                            </div>
+                            <input type="submit" value="Sand Message" name="user_sand_bnt" class="user_submit_btn">
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="bottom_social_section">
+        <div class="contact-social">
+            <div class="social-icons"><a href="#" target="_blank" title="facebook-f"><i class="fab fa-facebook-f"
+                        aria-hidden="true"></i></a><a href="#" target="_blank" title="twitter"><i class="fab fa-twitter"
+                        aria-hidden="true"></i></a><a href="#" target="_blank" title="google-plus"><i
+                        class="fab fa-google-plus" aria-hidden="true"></i></a><a href="#" target="_blank"
+                    title="linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#" target="_blank"
+                    title="pinterest-p"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+    </section>
+    <section class="google-map" style="padding: 0px;">
+        <div class="gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.70311946786!2d91.98757731477984!3d22.219024951455452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDEzJzA4LjUiTiA5McKwNTknMjMuMiJF!5e1!3m2!1sen!2sbd!4v1631141737975!5m2!1sen!2sbd" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+        <div id="footer-wrapper">
+            <div class="row">
+
+                <div class="footer-cols-four">
+                    <div class="col span_1_of_3 foo-cols widget-column box">
+                        <div id="risingtheme-widget-getintouch-2" class="risingtheme-widget-getintouch">
+                            <div class="widget-getintouch">
+                                <h2 class="section_title">Contact Us</h2>
+                                <div class="foo-getintouch">
+                                    <address>Chandanaish, Chittagong, Bangladesh</address>
+                                    <p><span>Phone : </span>+88 01882-052917 </p>
+                                    <p><span>Email : </span><a
+                                            href="mailto:mobarokhossen917@gmail.com">mobarokhossen917@gmail.com</a></p>
+                                    <p><a href="http://freelancermaruf.rf.gd">http://freelancermaruf.rf.gd</a></p>
+                                    <div class="social-icon-div-footer">
+                                        <ul class="widget-getintouch-social">
+                                            <li><a href="https://www.facebook.com/profile.php?id=100041984773396"
+                                                    target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li><a href="https://en.wikipedia.org/wiki/Google%2B" target="_blank"><i
+                                                        class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://twitter.com/MdMobar94084359" target="_blank"><i
+                                                        class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="https://www.instagram.com/mdmobarokhossen17/"
+                                                    target="_blank"><i class="fab fa-instagram"
+                                                        aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_3 foo-cols widget-column box float_right_footer">
+                        <div id="nav_menu-2" class="widget_nav_menu">
+                            <h2 class="section_title">Useful Links</h2>
+                            <div class="menu-useful-links-container">
+                                <ul id="menu-useful-links" class="menu footer-nav">
+                                    <li id="menu-item-143"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-143">
+                                        <a href="#header" aria-current="page">Home</a>
+                                    </li>
+                                    <li id="menu-item-144"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144">
+                                        <a href="#aboutus" aria-current="page">About
+                                            Us</a>
+                                    </li>
+                                    <li id="menu-item-147"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147">
+                                        <a href="#services" aria-current="page">Services</a>
+                                    </li>
+                                    <li id="menu-item-148"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148">
+                                        <a href="#gallery" aria-current="page">gallery</a>
+                                    </li>
+                                    <li
+                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-124">
+                                        <a class="footer-span" href="#skills" aria-current="page">Skills</a>
+                                    </li>
+                                    <li id="menu-item-146"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146">
+                                        <a href="#contactus" aria-current="page">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col span_1_of_3 foo-cols widget-column box footer_gallery">
+                        <div id="media_gallery-2" class="widget_media_gallery">
+                            <h2 class="section_title">Gallery</h2>
+                            <style type="text/css">
+                                #gallery-1 {
+                                    margin: auto;
+                                }
+
+                                #gallery-1 .gallery-item {
+                                    float: left;
+                                    margin-top: 10px;
+                                    text-align: center;
+                                    width: 33%;
+                                }
+
+                                #gallery-1 img {
+                                    border: 2px solid #cfcfcf;
+                                }
+
+                                #gallery-1 .gallery-caption {
+                                    margin-left: 0;
+                                }
+
+                                /* see gallery_shortcode() in wp-includes/media.php */
+                            </style>
+                            <div id="gallery-1" class="gallery galleryid-23 gallery-columns-3 gallery-size-medium">
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg1.jpg"
+                                            class="attachment-medium size-medium" alt="fgallery1">
+                                    </dt>
+                                </dl>
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg2.jpg"
+                                            class="attachment-medium size-medium" alt="" >
+                                    </dt>
+                                </dl>
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg3.jpg"
+                                            class="attachment-medium size-medium" alt="">
+                                    </dt>
+                                </dl><br style="clear: both">
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg4.jpg"
+                                            class="attachment-medium size-medium" alt="">
+                                    </dt>
+                                </dl>
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg5.jpg"
+                                            class="attachment-medium size-medium" alt="">
+                                    </dt>
+                                </dl>
+                                <dl class="gallery-item">
+                                    <dt class="gallery-icon landscape">
+                                        <img width="300" height="225" src="resources/image/galleryimg6.jpg"
+                                            class="attachment-medium size-medium" alt="">
+                                    </dt>
+                                </dl><br style="clear: both">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+
+            <div class="copyright-wrapper">
+                <div class="row">
+                    <div class="copyright-left">
+                        © 2021 | <a href="#"> Mobarok Hossen </a> | All rights reserved </div>
+                    <div class="copyright-right">
+                        <span class="designby"> &amp; Copyright <a href="freelancermaruf.rf.gd"
+                                target="_blank">freelancermaruf.rf.gd</a></span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- JAVASCRIPT & JQUERY CODE LINK -->
+    <!-- JQUERY CODE LINK -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JAVASCRIPT & JQUERY CODE LINK -->
+    <!-- HTML FOR SUPPORTING INTERNET EXPLOSER -->
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <!-- JS FOR SUPPORTING INTERNET EXPLOSER -->
+    <script src="vendors/js/respond.min.js"></script>
+    <!-- CSS FOR SUPPORTING INTERNET EXPLOSER -->
+    <script src="vendors/js/selectivizr-min.js"></script>
+    <!-- lightbox js link starting using popup image slider -->
+    <script src="vendors/js/lightbox-plus-jquery.min.js"></script>
+    <!-- JAVASCRIPT USING ANIMATED PROGRES BAR CODE LINK -->
+    <script src="vendors/js/animated-counter-prograssbar.js"></script>
+    <!-- JAVASCRIPT MAIN JS CODE LINK -->
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
